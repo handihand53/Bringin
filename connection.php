@@ -1,6 +1,6 @@
 <?php
-    $username="root";
-    $password="";
+    $username="bringin";
+    $password="bringindata";
     $server="localhost"
     $database="bringinDb";
 
