@@ -1,0 +1,119 @@
+body {
+	top:0;
+    width: 100%;
+    height: 100%;
+	margin: 0px;
+	color: rgb(66, 199, 70);
+    font-family: 'Dosis', sans-serif;
+	background-color: rgba(25, 255, 63, 0.555);
+	background-image: url("../asset/background.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#logo{
+	font-size: 70px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	text-align: center;
+	color: white;
+	font-family: 'Teko', sans-serif;
+}
+
+header {
+	padding: 10px 20px;
+	/*height: 30px;*/
+	background: rgb(25, 255, 82);
+	text-align: center;
+	margin: 0px;
+	color: white;
+}
+
+#header{
+	margin:	0px;
+}
+
+#header-login{
+	text-align: center;
+}
+
+.center2{
+	text-align: center;
+	margin: auto;
+	margin-bottom: 100px;
+}
+
+.center{
+	margin: auto;
+}
+
+div#body{
+	width: 350px;
+	background: rgb(255, 255, 255);
+	/*meletakkan form ke tengah*/
+	margin: 80px auto;
+	margin-top: 20px;
+	padding: 10px 20px;
+	border: 1px white solid;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+footer{
+	padding: 10px;
+	position: fixed;
+   	left: 0;
+   	bottom: 0;
+   	width: 100%;
+   	background-color: rgba(0, 0, 0, 0.1);
+   	color: white;
+   	text-align: center;
+}
+
+#footer{
+	text-align: center;
+}
+
+
+div>div>div#body-login{
+	margin:auto;
+}
+
+#button-login{
+	margin-top: 10px;
+	text-align: center;
+}
+
+#login{
+	margin-top: 5px;
+	background: #4CAF50;
+	color: white;
+	font-size: 12pt;
+	width: 100%;
+	border: none;
+	border-radius: 7px;
+	padding: 10px 20px;
+	border: 1px solid #4CAF50;
+	transition: ease-out 0.2s;
+}
+
+button#login:hover{
+	background-color: rgb(255, 255, 255) ;
+	color: #4CAF50;
+}
+
+input.input{
+	/*text-align: center;*/
+	/*width: 95%;*/
+	box-sizing : border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 11pt;
+	margin-bottom: 5px;
+}
+
+label{
+	font-size: 15px;
+}
