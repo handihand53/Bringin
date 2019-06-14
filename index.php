@@ -1,6 +1,21 @@
 <?php
     session_start();
-    
+    include 'connection.php';
+
+        if(isset($_POST)){
+            $sql="SELECT * FROM USER WHERE EMAIL='".$_POST['email']."' AND PASSWORD='".$_POST['password']."'";
+            $result = mysqli_query($con, $sql);
+            if(mysqli_num_rows($result)>0){
+            $data = mysqli_fetch_assoc($result);
+            // $_SESSION['username'] = $data['username'];
+            // $_SESSION['iduser'] = $data['iduser'];
+            //echo  $data['iduser'];
+            header("location: menu.php");
+            }
+            else{
+                header("location: index.php");
+            }
+        }
 ?>
 <!DOCTYPE html>
 <html>
@@ -23,7 +38,7 @@
 			<div id="body-login">
 				<form method="post" action="index.php">
 					<label class="text">E-mail</label>
-					<input class="input" type="text" name="username" placeholder="E-mail" required="yes">
+					<input class="input" type="text" name="email" placeholder="E-mail" required="yes">
 					<br>
 					<label class="text">Password</label>
 					<input class="input" type="Password" name="password" placeholder="Password" required="yes" maxlength="32">
